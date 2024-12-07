@@ -81,3 +81,11 @@ html,body{
   display: flex;
   flex-wrap: wrap;
 }
+
+#hht{
+  font-size: 60px;
+}
+
+#gtg{
+  font-size: 40px;
+}
