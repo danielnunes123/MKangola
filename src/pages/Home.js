@@ -1,10 +1,11 @@
 import React from 'react'
 import anuncio from '../images/a37254b158b720da1c299218e8250bfb.png'
+import { Slide } from './Slide'
 
 export default function Home() {
   return (
     <div className='bg-none w-[100%] h-[max-content]'> 
-     <div className='bg-[#7ED95617] w-[100%] h-[70vh] flex justify-between'>
+     <div className='bg-[#7ED95617] w-[100%] h-[max-content] flex justify-between p-´20px+'>
       <div className='w-[45%] bg-none p-[20px] pl-[50px]'>
         <h1 id='hht' className='text-[#7ED956] font-bold'>Transforme os seus itens em negócio ainda hoje</h1>
         <p className='text-[#0000009E]'>Somos uma empresa que impulsiona as pessoas a viverem os seus sonhos. 
@@ -23,13 +24,13 @@ de pessoas ao redor do mundo.</p>
       <h1 id='gtg' className='text-[#000000] font-medium'>O que você está precisando?</h1>
       <br/>
       <div className='flex'>
-        <div>ff</div>
-        <div>ff</div>
-        <div>ff</div>
-        <div>ff</div>
-        <div>ff</div>
-        <div>ff</div>
-        <div>ff</div>
+      {Slide.map((val, key) =>{
+        return(
+<div key={key}>
+  {val.img}
+  {val.titulo}</div>
+        )
+      })}
       </div>
       </div>
     </div>
